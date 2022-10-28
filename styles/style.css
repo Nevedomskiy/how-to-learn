@@ -97,6 +97,10 @@
   font-weight: normal;
 }
 
+.header__link::after {
+  content: " →";
+}
+
 /* Выше стилизация блока header */
 
 /* Ниже стилизация блока description */
@@ -163,6 +167,8 @@
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
 }
 
 .table__cell {
@@ -255,6 +261,9 @@
   color: #2f80ed;
   transform: translate(0, 100%);
 }
+.feynman__link::after {
+  content: " →";
+}
 
 /* Выше стилизация блока feynan */
 
@@ -287,13 +296,80 @@
 
 /* Выше стилизация блока kaufman */
 
-/* Ниже стилизация блока fotter */
-.fotter {
-  min-height: 350px;
+/* Ниже стилизация блока footer */
+.footer {
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+  padding: 60px 0 40px 0;
+}
+
+.footer__columns {
+  margin: 0 auto;
   display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.footer__column {
+  min-height: 350px;
 }
 
 .footer__column_content_copyright {
-  flex: 0 1 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-/* Выше стилизация блока fotter */
+
+.footer__author {
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-links {
+  list-style-type: none;
+  margin: 20px 0 16px 0;
+  padding: 0;
+}
+
+.footer__column-link {
+  display: block;
+  text-decoration: none;
+  color: #f2f2f2;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer__column_content_info {
+  transform: translate(150%, 0);
+}
+
+.footer__column_content_social .footer__column-link {
+  padding-left: 36px;
+}
+
+.footer__column_content_social .footer__column-link:first-child {
+  content: "";
+  background: url(../images/youtube-icon.svg) 0 7px/16px 16px no-repeat;
+}
+
+.footer__column_content_social .footer__column-link:nth-child(2) {
+  content: "";
+  background: url(../images/vk_color_white.svg) 0 7px/16px 16px no-repeat;
+}
+
+.footer__column_content_social .footer__column-link:last-child {
+  content: "";
+  background: url(../images/tiktok-icon.svg) 0 7px/16px 16px no-repeat;
+}
+
+/* Выше стилизация блока footer */
