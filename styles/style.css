@@ -11,22 +11,6 @@
   flex-direction: column;
 }
 
-/* выше установили ограничения для секции */
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
 /* Ниже стилизация блока header */
 
 .header {
@@ -40,6 +24,7 @@
   background-color: #f2f2f2;
   overflow: hidden;
 }
+
 .logo {
   display: block;
   width: 228px;
@@ -160,6 +145,7 @@
 /* Вышe стилизация блока description */
 
 /* Ниже стилизация блока digits */
+
 .digits {
   margin: 100px 0;
   display: flex;
@@ -262,6 +248,7 @@
   color: #2f80ed;
   transform: translate(0, 100%);
 }
+
 .feynman__link::after {
   content: " →";
 }
