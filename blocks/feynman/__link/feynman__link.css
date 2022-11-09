@@ -1,0 +1,16 @@
+.feynman__link {
+  display: block;
+  position: absolute;
+  right: 48px;
+  bottom: 50%;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+  transform: translate(0, 100%);
+}
+
+.feynman__link::after {
+  content: " →";
+}
