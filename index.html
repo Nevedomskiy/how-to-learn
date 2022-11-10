@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <title>Научиться учиться</title>
   </head>
   <body>
@@ -28,8 +28,8 @@
         <div class="header__square-pic rotation"></div>
       </header>
       <main class="content">
-        <section class="description">
-          <article class="two-columns">
+        <article class="description">
+          <div class="two-columns">
             <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
             <div class="two-columns__main-text">
               <p class="two-columns__paragraph">
@@ -50,8 +50,8 @@
                 техники применяются на примере обучения в Практикуме.
               </p>
             </div>
-          </article>
-        </section>
+          </div>
+        </article>
         <section class="techniques">
           <h2 class="section-title">Техники обучения</h2>
           <p class="section-subtitle">Пять практик от Барбары Оакли</p>
@@ -123,18 +123,14 @@
           <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
           <div class="video__iframes">
             <iframe
-              class="video__ifram"
-              width="515"
-              height="316"
+              class="video__iframe"
               src="https://www.youtube.com/embed/arj7oStGLkU"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
             <iframe
-              class="video__ifram"
-              width="515"
-              height="316"
+              class="video__iframe"
               src="https://www.youtube.com/embed/5MgBikgcWnY"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -142,9 +138,11 @@
             ></iframe>
           </div>
         </section>
-        <section class="oakley">
-          <article class="two-columns">
-            <h2 class="two-columns__brief">История Барбары Оакли.</h2>
+        <article class="oakley">
+          <div class="two-columns">
+            <h2 class="two-columns__brief" aria-labelledby>
+              История Барбары Оакли.
+            </h2>
             <div class="two-columns__main-text">
               <p class="two-columns__paragraph">
                 С детства Барбаре не давалась математика. Она считала себя
@@ -157,8 +155,8 @@
                 кому всё ясно с первого взгляда.
               </p>
             </div>
-          </article>
-        </section>
+          </div>
+        </article>
         <section class="feynman">
           <h2 class="feynman__title">Метод Фейнмана</h2>
           <p class="feynman__subtitle">Выучить и не забыть.</p>
@@ -223,7 +221,7 @@
               получить навыки и знания, которые приносят успех в школе, карьере
               и жизни.
             </p>
-            <h3 class="khan__quote-author">Джордж Лукас</h3>
+            <p class="khan__quote-author">Джордж Лукас</p>
             <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
             <div class="khan__book-container">
               <img
@@ -314,28 +312,28 @@
             Больше материалов о техниках и лайфхаках обучения
           </p>
           <div class="resources__logo-zone">
-            <a class="resources__link" href="#" target="_blank">
+            <a class="resources__link link" href="#" target="_blank">
               <img
                 alt="Логотив помпании 'Arzamas'"
                 class="resources__logo"
                 src="/images/resources-arzamas.svg"
               />
             </a>
-            <a class="resources__link" href="#" target="_blank">
+            <a class="resources__link link" href="#" target="_blank">
               <img
                 class="resources__logo"
                 alt="Логотив помпании 'N+1'"
                 src="/images/resources-n1.svg"
               />
             </a>
-            <a class="resources__link" href="#" target="_blank">
+            <a class="resources__link link" href="#" target="_blank">
               <img
                 alt="Логотив помпании 'Strelka'"
                 class="resources__logo"
                 src="/images/resources-strelka.svg"
               />
             </a>
-            <a class="resources__link" href="#" target="_blank">
+            <a class="resources__link link" href="#" target="_blank">
               <img
                 class="resources__logo"
                 alt="Логотив помпании 'Полка'"
